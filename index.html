@@ -1,1 +1,59 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="todo-container">
+
+
+        <div class="input-container">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Add a new task..."
+            >
+
+            <button id="addButton">Add</button>
+        </div>
+
+        <div class="top-bar">
+
+            <div class="filters">
+
+                <button id="allButton" class="active">
+                    All
+                </button>
+
+                <button id="pendingButton">
+                    Pending
+                </button>
+
+                <button id="completedButton">
+                    Completed
+                </button>
+
+            </div>
+
+            <button id="clearButton" class="clear-button">
+                Clear All
+            </button>
+
+        </div>
+
+        <ul id="taskList"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
